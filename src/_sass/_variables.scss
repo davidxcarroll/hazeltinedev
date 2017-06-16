@@ -1,0 +1,59 @@
+
+// VARIABLES
+// ============================================================
+
+$base-font-size:		 16px;
+
+$desktop:						 1140px;
+$tablet:						 770px;
+$landscape:					 600px;
+$mobile:						 420px;
+$mobile-xs:					 321px;
+
+$font-primary:			 'Space Mono', monospace;
+
+// MIXINS
+
+@mixin sequencePrimary($attribute) {
+  0%   {#{$attribute}: mistyrose;}
+  20%  {#{$attribute}: aliceblue;}
+  40%  {#{$attribute}: ivory;}
+  60%  {#{$attribute}: honeydew;}
+  80%  {#{$attribute}: ghostwhite;}
+  100% {#{$attribute}: mistyrose;}
+}
+
+@mixin sequenceSecondary($attribute) {
+  0%   {#{$attribute}: midnightblue;}
+  20%  {#{$attribute}: darkgreen;}
+  40%  {#{$attribute}: darkred;}
+  60%  {#{$attribute}: indigo;}
+  80%  {#{$attribute}: teal;}
+  100% {#{$attribute}: midnightblue;}
+}
+
+// ANIMATION
+
+@keyframes colorBodyPrimary {
+  @include sequencePrimary(background-color);
+}
+
+@keyframes colorBodySecondary {
+  @include sequenceSecondary(background-color);
+}
+
+@keyframes colorSvgPrimary {
+  @include sequencePrimary(fill);
+}
+
+@keyframes colorSvgSecondary {
+  @include sequenceSecondary(fill);
+}
+
+@keyframes colorTextPrimary {
+  @include sequencePrimary(color);
+}
+
+@keyframes colorTextSecondary {
+  @include sequenceSecondary(color);
+}

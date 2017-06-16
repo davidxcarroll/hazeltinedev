@@ -1,2 +1,5 @@
-# hazeltinedev
-Marketing site for Hazeltine Co
+# Hazeltine Co
+
+Marketing site for Hazeltine design
+
+Gulp, Pug, Sass
