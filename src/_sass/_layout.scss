@@ -17,6 +17,7 @@ body {
   }
   font-weight: 700;
   font-style: italic;
+  text-align: justify;
   animation: colorBodyPrimary 50s infinite;
 }
 
@@ -60,8 +61,13 @@ body {
 
 .project {}
 .project-item {}
+.project-tags {
+  margin: 4em 0 2em;
+  font-size: .8em;
+  text-transform: uppercase;
+}
 .project-item-cover {
-  padding: 1em 2em;
+  padding: 1em 2em .6em;
   animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
   .svg {
     width: 64%;
