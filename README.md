@@ -1,5 +1,5 @@
 # Hazeltine Co
 
-Marketing site for Hazeltine design
+Site for Hazeltine design
 
-Gulp, Pug, Sass
+Gulp, Pug, Sass, Bourbon, Neat, Slick.js
