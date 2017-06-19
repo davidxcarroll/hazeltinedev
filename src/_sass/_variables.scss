@@ -12,6 +12,33 @@ $mobile-xs:					 321px;
 
 $font-primary:			 'Space Mono', monospace;
 
+// GRADIENT
+
+// @mixin gradientShift {
+  
+//   @mixin colorVariable {
+//     $colorVariable: mistyrose;
+//     @keyframes colorShift {
+//       0%   {$colorVariable: mistyrose;}
+//       20%  {$colorVariable: aliceblue;}
+//       40%  {$colorVariable: ivory;}
+//       60%  {$colorVariable: honeydew;}
+//       80%  {$colorVariable: ghostwhite;}
+//       100% {$colorVariable: mistyrose;}
+//     }
+//     animation-name: colorShift;
+//     animation-duration: 5s;
+//     animation-iteration-count: infinite;
+//   }
+
+//   background: linear-gradient(45deg, @include colorVariable 0%, @include colorVariable 50%, @include colorVariable 100%);
+  
+// }
+
+// body {
+//   @include gradientShift;
+// }
+
 // MIXINS
 
 @mixin sequencePrimary($attribute) {
@@ -33,6 +60,10 @@ $font-primary:			 'Space Mono', monospace;
 }
 
 // ANIMATION
+
+// @keyframes colorBodyPrimaryGradient {
+//   @include sequencePrimaryGradient(background);
+// }
 
 @keyframes colorBodyPrimary {
   @include sequencePrimary(background-color);

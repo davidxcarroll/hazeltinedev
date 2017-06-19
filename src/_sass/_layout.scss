@@ -2,12 +2,6 @@
   transition: font-size .2s ease-in-out, margin .2s ease-in-out;
 }
 
-$color-primary-animate: ivory;
-$color-secondary-animate: midnightblue;
-
-$color-primary: $color-primary-animate;
-$color-secondary: $color-secondary-animate;
-
 body {
   @include media(min-width $mobile) {
     margin: 6em 0;
@@ -59,11 +53,27 @@ body {
   }
 }
 
-.project {}
-.project-item {}
+.project {
+  height: 27em;
+  .slick-prev:before,
+  .slick-next:before,
+  .slick-dots li button:before {
+    font-family: sans-serif;
+    font-style: initial;
+    animation: colorTextSecondary 80s infinite;
+  }
+}
+
+.project-item {
+  height: 100%;
+  position: relative;
+}
 .project-tags {
-  margin: 4em 0 2em;
-  font-size: .8em;
+  width: 85%;
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+  font-size: .75em;
   text-transform: uppercase;
 }
 .project-item-cover {
@@ -88,6 +98,7 @@ body {
 }
 
 .footer {
+  @extend .wrap;
   text-align: center;
 }
 
