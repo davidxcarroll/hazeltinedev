@@ -71,6 +71,9 @@ body {
 .project-item {
   height: 100%;
   position: relative;
+  @include media(max-width $landscape) {
+    margin: .1em;
+  }
 }
 .project-tags {
   width: 85%;
