@@ -62,6 +62,10 @@ body {
     font-style: initial;
     animation: colorTextSecondary 80s infinite;
   }
+  .slick-prev:before,
+  .slick-next:before {
+    opacity: 1;
+  }
 }
 
 .project-item {
@@ -85,6 +89,15 @@ body {
     svg {
       animation: colorSvgPrimary 50s infinite;
     }
+  }
+}
+
+.testimonials {
+  blockquote {
+    margin: 0 0 1em;
+    padding: 0 0 0 2em;
+    border-left: 2px solid;
+    animation: colorBorderSecondary 80s infinite;
   }
 }
 

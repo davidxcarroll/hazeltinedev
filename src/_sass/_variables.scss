@@ -88,3 +88,9 @@ $font-primary:			 'Space Mono', monospace;
 @keyframes colorTextSecondary {
   @include sequenceSecondary(color);
 }
+
+@keyframes colorBorderSecondary {
+  @include sequenceSecondary(border-color);
+}
+
+

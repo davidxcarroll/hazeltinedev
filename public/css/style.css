@@ -465,7 +465,7 @@ html {
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
     .slick-next:focus:before {
-      opacity: 1; }
+      opacity: 0.5; }
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
     opacity: 0.25; }
@@ -474,13 +474,13 @@ html {
     font-family: "slick";
     font-size: 20px;
     line-height: 1;
-    color: white;
-    opacity: 0.75;
+    color: black;
+    opacity: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -25px; }
+  left: -40px; }
   [dir="rtl"] .slick-prev {
     left: auto;
     right: -25px; }
@@ -490,7 +490,7 @@ html {
       content: "→"; }
 
 .slick-next {
-  right: -25px; }
+  right: -40px; }
   [dir="rtl"] .slick-next {
     left: -25px;
     right: auto; }
@@ -535,7 +535,7 @@ html {
       .slick-dots li button:hover, .slick-dots li button:focus {
         outline: none; }
         .slick-dots li button:hover:before, .slick-dots li button:focus:before {
-          opacity: 1; }
+          opacity: 0.5; }
       .slick-dots li button:before {
         position: absolute;
         top: 0;
@@ -544,7 +544,7 @@ html {
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 21px;
+        font-size: 30px;
         line-height: 20px;
         text-align: center;
         color: black;
@@ -553,7 +553,7 @@ html {
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
       color: black;
-      opacity: 0.75; }
+      opacity: 1; }
 
 @keyframes colorBodyPrimary {
   0% {
@@ -639,6 +639,20 @@ html {
   100% {
     color: midnightblue; } }
 
+@keyframes colorBorderSecondary {
+  0% {
+    border-color: midnightblue; }
+  20% {
+    border-color: darkgreen; }
+  40% {
+    border-color: darkred; }
+  60% {
+    border-color: indigo; }
+  80% {
+    border-color: teal; }
+  100% {
+    border-color: midnightblue; } }
+
 * {
   transition: font-size .2s ease-in-out, margin .2s ease-in-out; }
 
@@ -691,6 +705,9 @@ body {
     font-family: sans-serif;
     font-style: initial;
     animation: colorTextSecondary 80s infinite; }
+  .project .slick-prev:before,
+  .project .slick-next:before {
+    opacity: 1; }
 
 .project-item {
   height: 100%;
@@ -712,6 +729,12 @@ body {
     margin: 2em auto; }
     .project-item-cover .svg svg {
       animation: colorSvgPrimary 50s infinite; }
+
+.testimonials blockquote {
+  margin: 0 0 1em;
+  padding: 0 0 0 2em;
+  border-left: 2px solid;
+  animation: colorBorderSecondary 80s infinite; }
 
 .social {
   text-align: center; }
