@@ -39,6 +39,16 @@ $font-primary:			 'Space Mono', monospace;
 //   @include gradientShift;
 // }
 
+// EXTENDS
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
 // MIXINS
 
 @mixin sequencePrimary($attribute) {
