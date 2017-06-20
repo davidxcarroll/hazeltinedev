@@ -1,0 +1,22 @@
+mixin testimonial(quote,person,link,company)
+	div.testimonial-item
+		blockquote &ldquo;#{quote}&rdquo;
+		cite #[span.emoji 💬] #{person}, #[a(href=link) #{company}]
+
+div.section.testimonials
+	div.testimonials-list
+		+testimonial(
+		"The work is really good, and I know it was a last minute request, so I’m grateful.",
+		"Peter Vidani",
+		"http://bondstreet.com",
+		"Bond Street")
+		+testimonial(
+		"We love working with David whenever we can. He brings a ton of creativity, depth and experience to the table.",
+		"Chris Kalani",
+		"http://wake.com",
+		"Wake")
+		+testimonial(
+		"yo yo uyo oy oy oy",
+		"Pasquale D’Silva",
+		"http://thinko.com",
+		"Thinko")

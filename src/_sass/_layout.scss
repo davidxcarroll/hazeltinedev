@@ -1,14 +1,11 @@
+// NATIVE
+
 * {
   transition: font-size .2s ease-in-out, margin .2s ease-in-out;
 }
 
 body {
-  @include media(min-width $mobile) {
-    margin: 6em 0;
-  }
-  @include media(max-width $mobile) {
-    margin: 4em 0;
-  }
+  margin: 1em 0;
   font-weight: 700;
   font-style: italic;
   text-align: justify;
@@ -53,89 +50,8 @@ body {
   }
 }
 
-.project {
-  height: 27em;
-  .slick-prev:before,
-  .slick-next:before,
-  .slick-dots li button:before {
-    font-family: sans-serif;
-    font-style: initial;
-    animation: colorTextSecondary 80s infinite;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    opacity: 1;
-  }
-}
-
-.project-item {
-  height: 100%;
-  position: relative;
-  @include media(max-width $landscape) {
-    margin: .1em;
-  }
-}
-.project-tags {
-  width: 85%;
-  position: absolute;
-  bottom: 1em;
-  left: 2em;
-  font-size: .75em;
-  text-transform: uppercase;
-}
-.project-item-cover {
-  padding: 1em 2em .6em;
-  animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
-  .svg {
-    width: 64%;
-    margin: 2em auto;
-    svg {
-      animation: colorSvgPrimary 50s infinite;
-    }
-  }
-}
-
-.testimonials {
-  blockquote {
-    margin: 0 0 1em;
-    padding: 0 0 0 2em;
-    border-left: 2px solid;
-    animation: colorBorderSecondary 80s infinite;
-  }
-}
-
-.about {
-  position: relative;
-}
-.about-color-cover {
-  width: 100%;
-  height: 25em;
-  position: absolute;
-  animation: colorBodyPrimary 50s infinite;
-  mix-blend-mode: multiply;
-}
-.about-photo {
-  width: 100%;
-  height: 25em;
-  background-image: url('../img/david-carroll-about@2x.jpg');
-  background-color: currentColor;
-  background-size: cover;
-  background-blend-mode: screen;
-}
-
-.social {
-  text-align: center;
-  li {
-    width: 8%;
-    margin: 0 3%;
-    display: inline-block;
-  }
-}
-
-.footer {
-  @extend .wrap;
-  text-align: center;
-}
+// GLOBAL
+// ============================================================
 
 .logo {
   position: relative;
@@ -155,5 +71,132 @@ svg {
   width: 100%;
   height: auto;
   animation: colorSvgSecondary 80s infinite;
+}
+
+.emoji {
+  font-style: initial;
+}
+
+// AVAILABILITY
+// ============================================================
+
+.availability {
+  margin: 0;
+}
+
+// PROJECTS
+// ============================================================
+
+.slick-prev:before,
+.slick-next:before,
+.slick-dots li button:before {
+  font-family: sans-serif;
+  font-style: initial;
+  animation: colorTextSecondary 80s infinite;
+}
+.slick-prev:before,
+.slick-next:before {
+  opacity: 1;
+}
+
+.project {
+  height: 27em;
+}
+
+.project-item {
+  height: 100%;
+  position: relative;
+  padding: 1em 2em .6em;
+  border: 2px solid;
+  animation: colorBorderSecondary 80s infinite;
+  border-radius: $border-radius;
+}
+.project-item-cover {
+  animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
+  .svg {
+    width: 64%;
+    margin: 2em auto;
+    svg {
+      animation: colorSvgPrimary 50s infinite;
+    }
+  }
+}
+.project-tags {
+  width: 85%;
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+  font-size: .75em;
+  text-transform: uppercase;
+}
+.project-body {
+  font-family: $font-body;
+  font-style: initial;
+  font-size: .9em;
+  line-height: 1.8em;
+  text-align: left;
+}
+
+// TESTIMONIALS
+// ============================================================
+
+.testimonials {
+  .testimonials-list {
+    height: 8em;
+  }
+  .testimonial-item {
+    margin: 0 .4em;
+  }
+  blockquote {
+    margin: 0 0 2em;
+  }
+  cite {
+    font-size: .75em;
+    text-transform: uppercase;
+  }
+}
+
+// ABOUT
+// ============================================================
+
+.about {
+  position: relative;
+}
+.about-color-cover {
+  width: 100%;
+  height: 25em;
+  position: absolute;
+  animation: colorBodyPrimary 50s infinite;
+  mix-blend-mode: multiply;
+  border-radius: $border-radius;
+}
+.about-photo {
+  width: 100%;
+  height: 25em;
+  background-image: url('../img/david-carroll-about@2x.jpg');
+  background-color: currentColor;
+  background-size: cover;
+  background-blend-mode: screen;
+  border-radius: $border-radius;
+}
+
+// FOOTER
+// ============================================================
+
+.footer {
+  @extend .wrap;
+  text-align: center;
+}
+
+// SOCIAL
+// ============================================================
+
+.social {
+  text-align: center;
+  li {
+    width: 8%;
+    margin: 0 3%;
+    display: inline-block;
+  }
 }
 

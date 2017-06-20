@@ -1,0 +1,27 @@
+//- mixin case-study(title,link,tags,summary)
+//- 	div.section.project(class!=attributes.class)
+//- 		div
+//- 			.project-item.project-item-cover
+//- 				p
+//- 					a(href=link target="_blank") #{title}
+//- 				.svg
+//- 					include ../_svg/client-bossdrop
+//- 				p.project-tags #{tags}
+//- 		div
+//- 			.project-item.project-body
+//- 				p #{summary}
+			
+
+//- +case-study(
+//- 	"Boss Drop",
+//- 	"http://bossdrop.com",
+//- 	"#brand #squarespace #collateral",
+//- 	"Everyone knows: when you defeat a boss, you get mad loot.  That&rsquo;s the idea behind this web store hocking all manner of equally fun and nerdy treasures. Building a brand identity where you're essentially the target audience is pretty satisfying. It's not every day you get to draw monster skulls and use Zelda screen grabs as a reference. This was a quick project, with just a few rounds of review on the brand and using Squarespace for its many quick yet powerful plug'n'play features."
+//- 	)(class="project-bossdrop")
+
+include project-rayback.pug
+include project-humanwire.pug
+include project-launchlab.pug
+include project-magnana.pug
+include project-bossdrop.pug
+include project-wefoughtback.pug

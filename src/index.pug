@@ -2,31 +2,22 @@ extends _base.pug
 
 block content
 
+	div.section.availability
+		p #[span.emoji 🙆‍♂️] Currently available. #[a(href="https://www.vyte.in/hazeltinedesign" target="_blank") Schedule time to chat]
+
 	div.section.logo
 		include _svg/logo-hazeltine.pug
 		span.logo-label.logo-label-1 .co
 		span.logo-label.logo-label-2 brand &amp; digital design
 
 	div.section.intro
-		p I&rsquo;m David Carroll, a full-time freelance designer looking to simply collaborate with genuine folks on projects they care about.
-		p #[a(href="#about") Read more about me]
-		p #[a(href="mailto:david@hazeltine.co") Or let's just have a chat!]
-		p Here are some projects I've worked on&hellip;
+		p I&rsquo;m David Carroll, a full-time freelance designer looking to collaborate with genuine people on projects they care about.
+		p Is that you? #[a(href="https://www.vyte.in/hazeltinedesign" target="_blank") #[span.emoji 📆] Schedule time] or #[a(href="mailto:david@hazeltine.co" target="_blank") #[span.emoji 📬] email me].
+		p #[a(href="#about") Learn more about me]
+		p Here&rsquo;s some recent work&hellip;
 
-	include _includes/project-rayback.pug
-	include _includes/project-humanwire.pug
-	include _includes/project-launchlab.pug
-	include _includes/project-magnana.pug
-	include _includes/project-bossdrop.pug
-	include _includes/project-wefoughtback.pug
-	
-	div.section.testimonials
-		p Testimonials
-		blockquote &ldquo;The work is really good, and I know it was a last minute request, so I&rsquo;m grateful.&rdquo;
-		cite -Peter Vidani for #[a(href="http://bondstreet.com" target="_blank") Bond Street]
+	include _includes/projects.pug
 
-	div#about.section.about
-		div.about-color-cover
-		div.about-photo
-		p David cont'd&hellip; I've been in the business of brand and digital design for over 10 years, and doing it for fun even longer. These days I get excited about building scalable brand systems, planning and executing user-friendly ux/ui, and generally just helping folks reach the next step in their project, whatever that may look like.
-		p Currently living in Corvallis, OR with my baby momma and our little buckaroo. I've been told I'm a generous laugher, I pretend I can still skateboard, and love exploring this big, wide world.
+	include _includes/testimonials.pug
+
+	include _includes/about.pug
