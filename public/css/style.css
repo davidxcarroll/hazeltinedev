@@ -737,12 +737,12 @@ svg {
   height: 100%;
   position: relative;
   padding: 1em 2em .6em;
-  border: 2px solid;
-  animation: colorBorderSecondary 80s infinite;
+  box-shadow: inset 0 0 0 2px currentColor;
   border-radius: 5px; }
 
 .project-item-cover {
-  animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite; }
+  animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
+  box-shadow: none; }
   .project-item-cover .svg {
     width: 64%;
     margin: 2em auto; }
