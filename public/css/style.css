@@ -555,12 +555,6 @@ html {
       color: black;
       opacity: 1; }
 
-.hide {
-  visibility: hidden; }
-
-.show {
-  visibility: visible; }
-
 @keyframes colorBodyPrimary {
   0% {
     background-color: mistyrose; }
@@ -667,7 +661,7 @@ body {
   font-weight: 700;
   font-style: italic;
   text-align: justify;
-  animation: colorBodyPrimary 50s infinite; }
+  animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite; }
 
 ul, li {
   margin: 0;
@@ -683,20 +677,15 @@ body {
       font-size: 80%; } }
 
 .wrap, .footer {
-  width: 80%;
+  width: 90%;
   max-width: 460px;
   margin: 0 auto;
-  animation: colorTextSecondary 80s infinite; }
+  color: currentColor; }
   .wrap a, .footer a {
     color: inherit; }
 
-@media screen and (min-width: 420px) {
-  .section {
-    margin: 6em 0; } }
-
-@media screen and (max-width: 420px) {
-  .section {
-    margin: 4em 0; } }
+.section {
+  margin: 6em 0; }
 
 .logo {
   position: relative; }
@@ -711,10 +700,159 @@ body {
 svg {
   width: 100%;
   height: auto;
-  animation: colorSvgSecondary 80s infinite; }
+  fill: currentColor; }
 
 .emoji {
+  font-family: "Symbola", sans-serif;
   font-style: initial; }
+
+.emoji-availability:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "✔"; }
+
+.emoji-availability-no:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "✖"; }
+
+.emoji-email:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "📩"; }
+
+.emoji-schedule:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "📆"; }
+
+.emoji-info:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "ℹ"; }
+
+.emoji-family:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "💕"; }
+
+.emoji-world:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🌎"; }
+
+.emoji-laptop:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "👨‍💻"; }
+
+.emoji-testimonial:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "💬"; }
+
+.emoji-brand:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🚩"; }
+
+.emoji-design:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🎨"; }
+
+.emoji-strategy:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "📊"; }
+
+.emoji-dev:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🔣"; }
+
+.emoji-etc:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "💯"; }
+
+.emoji-arrow-up:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🔺"; }
+
+.emoji-arrow-down:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🔻"; }
+
+.emoji-marriage:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "💍"; }
+
+.emoji-school:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🎓"; }
+
+.emoji-bike:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🚲"; }
+
+.emoji-sunrise:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🌄"; }
+
+.emoji-flash:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "✨"; }
+
+.emoji-born:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🐣"; }
+
+.emoji-move:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "📍"; }
+
+.emoji-top:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "🔝"; }
+
+.emoji-hazeltine {
+  display: inline-block;
+  margin: 0 .5em; }
+
+.emoji-human {
+  display: inline-block;
+  margin: 0 .5em; }
+
+.emoji-truman {
+  display: inline-block;
+  margin: 0 .5em; }
+
+.emoji-epipheo {
+  display: inline-block;
+  margin: 0 .5em; }
+
+.emoji-waggener {
+  display: inline-block;
+  margin: 0 .5em; }
+
+.emoji-amplitude {
+  display: inline-block;
+  margin: 0 .5em; }
+
+.emoji-jive {
+  display: inline-block;
+  margin: 0 .5em; }
 
 .availability {
   margin: 0; }
@@ -729,6 +867,9 @@ svg {
 .slick-prev:before,
 .slick-next:before {
   opacity: 1; }
+
+.slick-dots li {
+  margin: 0; }
 
 .project {
   height: 27em; }
@@ -747,7 +888,7 @@ svg {
     width: 64%;
     margin: 2em auto; }
     .project-item-cover .svg svg {
-      animation: colorSvgPrimary 50s infinite; }
+      fill: currentColor; }
 
 .project-tags {
   width: 85%;
@@ -764,21 +905,31 @@ svg {
   line-height: 1.8em;
   text-align: left; }
 
+.more-work {
+  display: none; }
+
 .testimonials .testimonials-list {
-  height: 8em; }
+  height: 9em; }
 
 .testimonials .testimonial-item {
   margin: 0 .4em; }
 
 .testimonials blockquote {
-  margin: 0 0 2em; }
+  margin: 0 0 1em; }
 
 .testimonials cite {
   font-size: .75em;
   text-transform: uppercase; }
 
-.about {
-  position: relative; }
+.about-photo {
+  width: 100%;
+  height: 25em;
+  position: relative;
+  background-image: url("../img/david-carroll-about@2x.jpg");
+  background-color: currentColor;
+  background-size: cover;
+  background-blend-mode: screen;
+  border-radius: 5px; }
 
 .about-color-cover {
   width: 100%;
@@ -788,14 +939,39 @@ svg {
   mix-blend-mode: multiply;
   border-radius: 5px; }
 
-.about-photo {
-  width: 100%;
-  height: 25em;
-  background-image: url("../img/david-carroll-about@2x.jpg");
-  background-color: currentColor;
-  background-size: cover;
-  background-blend-mode: screen;
-  border-radius: 5px; }
+.about-timeline {
+  display: none;
+  text-align: left;
+  margin: 0 0 4em; }
+  .about-timeline .timeline-item {
+    margin: 0 0 1em; }
+  .about-timeline div {
+    display: inline-block;
+    vertical-align: top; }
+  .about-timeline p {
+    margin: 0; }
+  .about-timeline .year {
+    width: 18%;
+    text-align: right; }
+  .about-timeline .visual {
+    width: 10%;
+    font-size: 1.5em;
+    text-align: center; }
+    .about-timeline .visual svg {
+      width: 70%;
+      height: auto;
+      display: inline; }
+  .about-timeline .event {
+    width: 67%; }
+
+ul.about-services {
+  display: none; }
+  ul.about-services li {
+    margin: 0 0 2em; }
+    ul.about-services li ul, ul.about-services li li {
+      list-style: circle; }
+    ul.about-services li ul li {
+      margin: 0 0 0 3em; }
 
 .footer {
   text-align: center; }

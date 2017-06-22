@@ -12,6 +12,7 @@ $mobile-xs:					 321px;
 
 $font-primary:       'Space Mono', monospace;
 $font-body:          'Arvo', serif;
+$font-emoji:         'Symbola', sans-serif;
 
 $border-radius:      5px;
 
@@ -44,13 +45,13 @@ $border-radius:      5px;
 
 // EXTENDS
 
-.hide {
-  visibility: hidden;
-}
+// .hide {
+//   display: none;
+// }
 
-.show {
-  visibility: visible;
-}
+// .show {
+//   display: initial;
+// }
 
 // MIXINS
 

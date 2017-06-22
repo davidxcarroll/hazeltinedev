@@ -1,0 +1,80 @@
+ul.about-timeline
+
+	mixin timelineItem(year, event)
+		li.timeline-item
+			div.year
+				p #{year}
+			div.visual
+				p #[span.emoji(class!=attributes.class)]
+			div.event
+				p #{event}
+
+	//- +timelineItem("Jun 2017", "Started Hazeltine")(class="emoji-hazeltine")
+	li.timeline-item
+		div.year
+			p Jun 2017
+		div.visual
+			include ../_svg/job-hazeltine.pug
+		div.event
+			p Started Hazeltine
+	+timelineItem("May 2017", "Moved to Corvallis, OR")(class="emoji-move")
+	+timelineItem("Jun 2016", "Moved to west Boulder, CO")(class="emoji-move")
+	+timelineItem("Mar 2016", "Had a sweet baby rascal")(class="emoji-born")
+	//- +timelineItem("Nov 2015", "Started at Human Design")(class="emoji-human")
+	li.timeline-item
+		div.year
+			p Nov 2015
+		div.visual
+			include ../_svg/job-human.pug
+		div.event
+			p Started at #[a(href="http://humandesign.com" target="_blank") Human Design]
+	+timelineItem("Jan 2015", "Moved to west Asheville, NC")(class="emoji-move")
+	+timelineItem("Aug 2013", "Married my honey pie")(class="emoji-marriage")
+	//- +timelineItem("Sep 2013", "(Epipheo turned into Sincerely Truman)")(class="emoji-truman")
+	li.timeline-item
+		div.year
+			p Sep 2013
+		div.visual
+			include ../_svg/job-truman.pug
+		div.event
+			p Epipheo became Sincerely Truman
+	//- +timelineItem("Nov 2011", "Started at Epipheo")(class="emoji-epipheo")
+	li.timeline-item
+		div.year
+			p Nov 2012
+		div.visual
+			include ../_svg/job-epipheo.pug
+		div.event
+			p Started at #[a(href="http://epipheo.com" target="_blank") Epipheo]
+	+timelineItem("Sep 2012", "Grand Canyon road trip on motorcycles")(class="emoji-sunrise")
+	+timelineItem("Jun 2010", "Moved to SE Portland, OR")(class="emoji-move")
+	//- +timelineItem("Oct 2009", "Started at Waggener Edstrom")(class="emoji-waggener")
+	li.timeline-item
+		div.year
+			p Oct 2009
+		div.visual
+			include ../_svg/job-we.pug
+		div.event
+			p Started at #[a(href="http://waggeneredstrom.com" target="_blank") Waggener Edstrom]
+	//- +timelineItem("May 2008", "Started at Amplitude Media")(class="emoji-amplitude")
+	li.timeline-item
+		div.year
+			p May 2008
+		div.visual
+			include ../_svg/job-amplitude.pug
+		div.event
+			p Started at Amplitude Media
+	//- +timelineItem("Feb 2008", "Started contract at Jive Software")(class="emoji-jive")
+	li.timeline-item
+		div.year
+			p Feb 2008
+		div.visual
+			include ../_svg/job-jive.pug
+		div.event
+			p Started contract at #[a(href="http://jivesoftware.com" target="_blank") Jive Software]
+	+timelineItem("Jun 2005", "Graduated high school")(class="emoji-school")
+	+timelineItem("Apr 2005", "Had my first client, Smokin Pocketbikes")(class="emoji-bike")
+	+timelineItem("Mar 2001", "Got the bootleg of Macromedia Flash MX that started everything, thanks Melissa")(class="emoji-flash")
+	+timelineItem("May 1987", "Born in Vancouver, WA")(class="emoji-born")
+
+
