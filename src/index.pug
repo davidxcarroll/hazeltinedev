@@ -3,17 +3,16 @@ extends _base.pug
 block content
 
 	div.section.availability
-		p #[span.emoji.emoji-availability]Currently taking new projects. #[a(href="https://www.vyte.in/hazeltinedesign" target="_blank") Schedule a time to chat]
+		p #[span.emoji.emoji-availability]Currently taking new projects
 
-	div.section.logo
-		include _svg/logo-hazeltine.pug
-		span.logo-label.logo-label-1 .co
-		span.logo-label.logo-label-2 brand &amp; digital design
-
-	div.section.intro
-		p I&rsquo;m David Carroll, a full-time freelance designer looking to collaborate with genuine people on projects they care about.
-		p #[a(href="https://www.vyte.in/hazeltinedesign" target="_blank") #[span.emoji.emoji-schedule]Schedule time] or #[a(href="mailto:david@hazeltine.co" target="_blank") #[span.emoji.emoji-email]email me].
-		p #[a(href="#about") #[span.emoji.emoji-info]More about me]
+		div.logo
+			include _svg/logo-hazeltine.pug
+			span.logo-label.logo-label-1 .co
+			span.logo-label.logo-label-2 brand &amp; digital design
+		div.intro
+			p I&rsquo;m David Carroll, a full-time freelance designer looking to collaborate with genuine people on projects they care about.
+			p #[a(href="https://www.vyte.in/hazeltinedesign" target="_blank") #[span.emoji.emoji-schedule]Schedule time] or #[a(href="mailto:david@hazeltine.co" target="_blank") #[span.emoji.emoji-email]email me]
+			p #[a(href="#about") #[span.emoji.emoji-info]More about me]
 
 	include _includes/projects.pug
 

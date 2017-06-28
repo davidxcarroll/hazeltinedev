@@ -555,6 +555,12 @@ html {
       color: black;
       opacity: 1; }
 
+@font-face {
+  font-family: "Symbola";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/symbola.eot?#iefix") format("embedded-opentype"), url("../font/symbola.woff2") format("woff2"), url("../font/symbola.woff") format("woff"), url("../font/symbola.ttf") format("truetype"), url("../font/symbola.svg#Symbola") format("svg"); }
+
 @keyframes colorBodyPrimary {
   0% {
     background-color: mistyrose; }
@@ -689,13 +695,33 @@ body {
 
 .logo {
   position: relative; }
+  @media screen and (min-width: 600px) {
+    .logo {
+      margin-left: -2.2em; } }
   .logo .logo-label {
     position: absolute;
     bottom: 0; }
   .logo .logo-label-1 {
+    transform: rotate(-12deg);
     left: 22%; }
+    @media screen and (min-width: 600px) {
+      .logo .logo-label-1 {
+        top: 9.5em; } }
+    @media screen and (max-width: 600px) {
+      .logo .logo-label-1 {
+        top: 70%; } }
   .logo .logo-label-2 {
+    transform: rotate(-12deg);
     right: 0; }
+    @media screen and (min-width: 600px) {
+      .logo .logo-label-2 {
+        top: 6em; } }
+    @media screen and (max-width: 600px) {
+      .logo .logo-label-2 {
+        top: 45%; } }
+    @media screen and (max-width: 420px) {
+      .logo .logo-label-2 {
+        width: 50%; } }
 
 svg {
   width: 100%;
@@ -709,7 +735,7 @@ svg {
 .emoji-availability:before {
   display: inline-block;
   margin: 0 .5em;
-  content: "✔"; }
+  content: "📢"; }
 
 .emoji-availability-no:before {
   display: inline-block;
@@ -786,6 +812,11 @@ svg {
   margin: 0 .5em;
   content: "🔻"; }
 
+.emoji-arrow-down-two:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "⏬"; }
+
 .emoji-marriage:before {
   display: inline-block;
   margin: 0 .5em;
@@ -855,7 +886,7 @@ svg {
   margin: 0 .5em; }
 
 .availability {
-  margin: 0; }
+  margin-top: 0; }
 
 .slick-prev:before,
 .slick-next:before,

@@ -29,6 +29,11 @@ body {
   }
 }
 
+h1 {
+  // font-family: $font-heading;
+  // transform: translateX(-.5em);
+}
+
 // LAYOUT
 
 .wrap {
@@ -50,15 +55,35 @@ body {
 
 .logo {
   position: relative;
+  @include media(min-width $landscape) {
+    margin-left: -2.2em;
+  }
   .logo-label {
     position: absolute;
     bottom: 0;
   }
   .logo-label-1 {
+    transform: rotate(-12deg);
     left: 22%;
+    @include media(min-width $landscape) {
+      top: 9.5em;
+    }
+    @include media(max-width $landscape) {
+      top: 70%;
+    }
   }
   .logo-label-2 {
+    transform: rotate(-12deg);
     right: 0;
+    @include media(min-width $landscape) {
+      top: 6em;
+    }
+    @include media(max-width $landscape) {
+      top: 45%;
+    }
+    @include media(max-width $mobile) {
+      width: 50%;
+    }
   }
 }
 
@@ -73,7 +98,7 @@ svg {
   font-style: initial;
 }
 
-@each $emoji, $code in (availability,     "\2714"),
+@each $emoji, $code in (availability,     "\1F4E2"),
                        (availability-no,  "\2716"),
                        (email,            "\1F4E9"),
                        (schedule,         "\1F4C6"),
@@ -89,6 +114,7 @@ svg {
                        (etc,              "\1F4AF"),
                        (arrow-up,         "\1F53A"),
                        (arrow-down,       "\1F53B"),
+                       (arrow-down-two,   "\23EC"),
                        (marriage,         "\1F48D"),
                        (school,           "\1F393"),
                        (bike,             "\1F6B2"),
@@ -115,7 +141,7 @@ svg {
 // ============================================================
 
 .availability {
-  margin: 0;
+  margin-top: 0;
 }
 
 // PROJECTS

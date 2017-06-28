@@ -13,6 +13,9 @@ $mobile-xs:					 321px;
 $font-primary:       'Space Mono', monospace;
 $font-body:          'Arvo', serif;
 $font-emoji:         'Symbola', sans-serif;
+$font-heading:       'Coustard', serif;
+
+@include font-face('Symbola', '../font/symbola');
 
 $border-radius:      5px;
 
