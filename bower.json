@@ -1,0 +1,22 @@
+{
+  "name": "hazeltine",
+  "description": "hazeltine site",
+  "main": "gulpfile.js",
+  "authors": [
+    "David Carroll"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "brand",
+    "ux",
+    "ui",
+    "identity",
+    "design",
+    "portland",
+    "corvallis"
+  ],
+  "homepage": "hazeltine.co",
+  "dependencies": {
+    "jribbble": "^2.0.4"
+  }
+}

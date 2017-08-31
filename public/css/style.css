@@ -1011,6 +1011,16 @@ ul.about-services {
     ul.about-services li ul li {
       margin: 0 0 0 3em; }
 
+.shots .shot {
+  width: 46%;
+  margin: 0 4% 4% 0;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: -.3em .3em 0 0 currentColor; }
+  .shots .shot img {
+    width: 100%; }
+
 .footer {
   text-align: center; }
 

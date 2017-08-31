@@ -1,4 +1,6 @@
+
 // SLICK PROJECTS
+// ==================================================
 
 $('.project').slick({
   dots: true,
@@ -22,6 +24,7 @@ $('.project').slick({
 });
 
 // SLICK TESTIMONIALS
+// ==================================================
 
 $('.testimonials-list').slick({
   dots: true,
@@ -45,6 +48,7 @@ $('.testimonials-list').slick({
 });
 
 // ABOUT ACCORDIONS
+// ==================================================
 
 $('#about-timeline-button').click(function(){
   $('.about-timeline').slideToggle(300);
@@ -64,7 +68,26 @@ $('#about-services-button').click(function(){
   }
 });
 
+// JRIBBBLE
+// ==================================================
+
+$.jribbble.setToken('d2147d39726f9d071678fb12d2a5a10b92737c89e9d12f88ced7e8d074d06aa6');
+
+$.jribbble.users('davidxcarroll').shots({per_page: 4}).then(function(shots) {
+  var html = [];
+  
+  shots.forEach(function(shot) {
+    html.push('<li class="shot">');
+    html.push('<a href="' + shot.html_url + '" target="_blank">');
+    html.push('<img src="' + shot.images.hidpi + '">');
+    html.push('</a></li>');
+  });
+  
+  $('.shots').html(html.join(''));
+});
+
 // GOOGLE ANALYTICS
+// ==================================================
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -304,6 +304,23 @@ ul.about-services {
   }
 }
 
+// JRIBBBLE
+// ============================================================
+
+.shots {
+  .shot {
+    width: 46%;
+    margin: 0 4% 4% 0;
+    display: inline-block;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: -.3em .3em 0 0 currentColor;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // FOOTER
 // ============================================================
 
