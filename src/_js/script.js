@@ -30,10 +30,11 @@ $('.project').slick({
 
 $('.testimonials-list').slick({
   dots: true,
-  infinite: true,
+  infinite: false,
   speed: 200,
   slidesToShow: 1,
   slidesToScroll: 1,
+  adaptiveHeight: true,
   responsive: [
     {
       breakpoint: 600,
@@ -48,6 +49,14 @@ $('.testimonials-list').slick({
     }
   ]
 });
+
+// $('.slick-slider').on('click', '.slick-slide', function (e) {
+//   e.stopPropagation();
+//   var index = $(this).data("slick-index");
+//   if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
+//     $('.slick-slider').slick('slickGoTo', index);
+//   }
+// });
 
 // ABOUT ACCORDIONS
 // ==================================================

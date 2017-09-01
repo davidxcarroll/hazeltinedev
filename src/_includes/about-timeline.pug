@@ -1,14 +1,5 @@
 ul.about-timeline
 
-	mixin timelineItem(year, event)
-		li.timeline-item
-			div.year
-				p #{year}
-			div.visual
-				p #[span.emoji(class!=attributes.class)]
-			div.event
-				p #{event}
-
 	//- +timelineItem("Jun 2017", "Started Hazeltine")(class="emoji-hazeltine")
 	li.timeline-item
 		div.year

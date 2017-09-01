@@ -1,8 +1,3 @@
-mixin testimonial(quote,person,link,company)
-	div.testimonial-item
-		blockquote &ldquo;#{quote}&rdquo;
-		cite #[span.emoji.emoji-testimonial]#{person}, #[a(href=link) #{company}]
-
 div.section.testimonials
 	h1 Some nice words
 	div.testimonials-list
@@ -16,11 +11,6 @@ div.section.testimonials
 		"Chris Kalani",
 		"http://wake.com",
 		"Wake")
-		//- +testimonial(
-		//- "Ideas flow from David like a fresh mountain spring. His passion and his creativity know no bounds. I've always loved working with him and wish I still did. If you have a chance to collaborate on a project don't pass it up or you will be a considered fool for all your days.",
-		//- "Chris Kalani",
-		//- "http://wake.com",
-		//- "Wake")
 		+testimonial(
 		"David possesses a hyper-vibrant brain. This brain conjures remarkable creative work unlike anything you could imagine. Just trust me ok?",
 		"Pasquale D'Silva",
