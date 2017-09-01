@@ -480,7 +480,7 @@ html {
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -40px; }
+  left: -50px; }
   [dir="rtl"] .slick-prev {
     left: auto;
     right: -25px; }
@@ -490,7 +490,7 @@ html {
       content: "→"; }
 
 .slick-next {
-  right: -40px; }
+  right: -50px; }
   [dir="rtl"] .slick-next {
     left: -25px;
     right: auto; }
@@ -667,7 +667,8 @@ body {
   font-weight: 700;
   font-style: italic;
   text-align: justify;
-  animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite; }
+  animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite;
+  overflow-x: hidden; }
 
 ul, li {
   margin: 0;
@@ -895,6 +896,9 @@ svg {
   display: inline-block;
   margin: 0 .5em; }
 
+.project .slick-list {
+  overflow: visible; }
+
 .slick-prev:before,
 .slick-next:before,
 .slick-dots li button:before {
@@ -906,6 +910,18 @@ svg {
 .slick-next:before {
   opacity: 1; }
 
+.slick-prev,
+.slick-next {
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  animation: colorTextSecondary 80s infinite, colorBodyPrimary 50s infinite;
+  box-shadow: inset 0 0 0 1px currentColor, 0 2px 0 0 currentColor; }
+  .slick-prev::before,
+  .slick-next::before {
+    animation: colorTextSecondary 80s infinite; }
+
 .slick-dots li {
   margin: 0; }
 
@@ -915,9 +931,7 @@ svg {
 .project-item {
   height: 100%;
   position: relative;
-  padding: 1em 2em .6em;
-  box-shadow: inset 0 0 0 2px currentColor;
-  border-radius: 5px; }
+  padding: 1em 2em .6em; }
 
 .project-item-cover {
   animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
@@ -937,10 +951,10 @@ svg {
   text-transform: uppercase; }
 
 .project-body {
-  font-family: "Arvo", serif;
+  font-family: "Space Mono", monospace;
   font-style: initial;
   font-size: .9em;
-  line-height: 1.8em;
+  line-height: 1.6em;
   text-align: left; }
 
 .more-work {
@@ -966,16 +980,14 @@ svg {
   background-image: url("../img/david-carroll-about@2x.jpg");
   background-color: currentColor;
   background-size: cover;
-  background-blend-mode: screen;
-  border-radius: 5px; }
+  background-blend-mode: screen; }
 
 .about-color-cover {
   width: 100%;
   height: 25em;
   position: absolute;
   animation: colorBodyPrimary 50s infinite;
-  mix-blend-mode: multiply;
-  border-radius: 5px; }
+  mix-blend-mode: multiply; }
 
 .about-timeline {
   display: none;
@@ -1015,7 +1027,6 @@ ul.about-services {
   width: 46%;
   margin: 0 4% 4% 0;
   display: inline-block;
-  border-radius: 5px;
   overflow: hidden;
   box-shadow: -.3em .3em 0 0 currentColor; }
   .shots .shot img {

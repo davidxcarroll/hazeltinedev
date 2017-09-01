@@ -2,22 +2,22 @@
 // VARIABLES
 // ============================================================
 
-$base-font-size:		 16px;
+$base-font-size:	 16px;
 
-$desktop:						 1140px;
-$tablet:						 770px;
-$landscape:					 600px;
-$mobile:						 420px;
-$mobile-xs:					 321px;
+$desktop:					 1140px;
+$tablet:					 770px;
+$landscape:				 600px;
+$mobile:					 420px;
+$mobile-xs:				 321px;
 
-$font-primary:       'Space Mono', monospace;
-$font-body:          'Arvo', serif;
-$font-emoji:         'Symbola', sans-serif;
-$font-heading:       'Coustard', serif;
+$font-primary:     'Space Mono', monospace;
+$font-body:        'Arvo', serif;
+$font-emoji:       'Symbola', sans-serif;
+$font-heading:     'Coustard', serif;
 
 @include font-face('Symbola', '../font/symbola');
 
-$border-radius:      5px;
+$border-radius:    5px;
 
 // GRADIENT
 

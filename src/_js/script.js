@@ -3,8 +3,10 @@
 // ==================================================
 
 $('.project').slick({
+  centerMode: true,
+  centerPadding: '0',
   dots: true,
-  infinite: true,
+  infinite: false,
   speed: 200,
   slidesToShow: 1,
   slidesToScroll: 1,
