@@ -59,9 +59,9 @@
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "←"; }
+    content: "⇦"; }
     [dir="rtl"] .slick-prev:before {
-      content: "→"; }
+      content: "⇨"; }
 
 .slick-next {
   right: -50px; }
@@ -69,9 +69,9 @@
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "→"; }
+    content: "⇨"; }
     [dir="rtl"] .slick-next:before {
-      content: "←"; }
+      content: "⇦"; }
 
 /* Dots */
 .slick-dotted.slick-slider {

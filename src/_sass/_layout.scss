@@ -131,6 +131,8 @@ svg {
                        (arrow-up,         "\1F53A"),
                        (arrow-down,       "\1F53B"),
                        (arrow-down-two,   "\23EC"),
+                       (arrow-left,       "\2B05"),
+                       (arrow-right,      "\27A1"),
                        (marriage,         "\1F48D"),
                        (school,           "\1F393"),
                        (bike,             "\1F6B2"),
@@ -181,8 +183,8 @@ svg {
 .slick-prev,
 .slick-next {
   z-index: 100;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 100px;
   animation: colorTextSecondary 80s infinite, colorBodyPrimary 50s infinite;
   // animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;

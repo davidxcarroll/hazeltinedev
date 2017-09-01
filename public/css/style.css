@@ -485,9 +485,9 @@ html {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "←"; }
+    content: "⇦"; }
     [dir="rtl"] .slick-prev:before {
-      content: "→"; }
+      content: "⇨"; }
 
 .slick-next {
   right: -50px; }
@@ -495,9 +495,9 @@ html {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "→"; }
+    content: "⇨"; }
     [dir="rtl"] .slick-next:before {
-      content: "←"; }
+      content: "⇦"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -828,6 +828,16 @@ svg {
   margin: 0 .5em;
   content: "⏬"; }
 
+.emoji-arrow-left:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "⬅"; }
+
+.emoji-arrow-right:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "➡"; }
+
 .emoji-marriage:before {
   display: inline-block;
   margin: 0 .5em;
@@ -913,8 +923,8 @@ svg {
 .slick-prev,
 .slick-next {
   z-index: 100;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 100px;
   animation: colorTextSecondary 80s infinite, colorBodyPrimary 50s infinite;
   box-shadow: inset 0 0 0 1px currentColor, 0 2px 0 0 currentColor; }
