@@ -905,6 +905,10 @@ svg {
   display: inline-block;
   margin: 0 .5em; }
 
+.project *:active,
+.project *:focus {
+  outline: 0; }
+
 .project .slick-list {
   overflow: visible; }
 

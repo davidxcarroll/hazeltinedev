@@ -30,11 +30,6 @@ body {
   }
 }
 
-h1 {
-  // font-family: $font-heading;
-  // transform: translateX(-.5em);
-}
-
 // LAYOUT
 
 .wrap {
@@ -157,6 +152,11 @@ svg {
 
 // PROJECTS
 // ============================================================
+
+.project *:active,
+.project *:focus, {
+  outline: 0;
+}
 
 .project .slick-list {
   overflow: visible;
