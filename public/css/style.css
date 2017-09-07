@@ -872,6 +872,11 @@ svg {
   margin: 0 .5em;
   content: "📍"; }
 
+.emoji-question:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "❓"; }
+
 .emoji-top:before {
   display: inline-block;
   margin: 0 .5em;
