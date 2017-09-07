@@ -30,19 +30,17 @@
   padding: 0;
   border: none;
   outline: none; }
-  .slick-prev:hover, .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
+  .slick-prev:hover,
+  .slick-next:hover {
     outline: none;
     background: transparent;
     color: transparent; }
-    .slick-prev:hover:before, .slick-prev:focus:before,
-    .slick-next:hover:before,
-    .slick-next:focus:before {
+    .slick-prev:hover:before,
+    .slick-next:hover:before {
       opacity: 0.5; }
-  .slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before {
-    opacity: 0.25; }
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
+    opacity: 0; }
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
@@ -106,9 +104,9 @@
       color: transparent;
       padding: 5px;
       cursor: pointer; }
-      .slick-dots li button:hover, .slick-dots li button:focus {
+      .slick-dots li button:hover {
         outline: none; }
-        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+        .slick-dots li button:hover:before {
           opacity: 0.5; }
       .slick-dots li button:before {
         position: absolute;

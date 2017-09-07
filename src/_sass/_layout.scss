@@ -30,6 +30,16 @@ body {
   }
 }
 
+.headline {
+  margin: -.5em 0 1em -.8em;
+  font-family: $font-headline;
+  font-size: 3em;
+  transform: rotate(-12deg);
+}
+.projects .headline {
+  margin-bottom: -1em;
+}
+
 // LAYOUT
 
 .wrap {
@@ -94,8 +104,11 @@ body {
 .intro {
   margin-top: 4em;
 }
+.intro-body {
+  @extend .font-body;
+}
 .intro-links {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 svg {
@@ -154,13 +167,14 @@ svg {
 // PROJECTS
 // ============================================================
 
-.project *:active,
-.project *:focus, {
+*:active, *:focus {
   outline: 0;
 }
 
-.project .slick-list {
-  overflow: visible;
+@include media(min-width $landscape) {
+  .project .slick-list {
+    overflow: visible;
+  }
 }
 
 .slick-prev:before,
@@ -177,19 +191,18 @@ svg {
 .slick-prev,
 .slick-next {
   z-index: 100;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 100px;
   animation: colorTextSecondary 80s infinite, colorBodyPrimary 50s infinite;
   // animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
-  box-shadow: inset 0 0 0 1px currentColor, 0 5px 0 0 currentColor;
+  box-shadow: inset 0 0 0 .8px currentColor, 0 0 0 .8px currentColor, 0 5px 0 0 currentColor;
   &::before {
+    font-size: 15px;
     animation: colorTextSecondary 80s infinite;
     // animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
   }
 }
-
-.slick-arrow {}
 
 .slick-dots li {
   margin: 0;
@@ -229,11 +242,7 @@ svg {
 }
 .project-body {
   margin: 0 0 1em 0;
-  font-family: $font-primary;
-  font-style: initial;
-  font-size: .9em;
-  line-height: 1.6em;
-  text-align: left;
+  @extend .font-body;
 }
 
 .more-work {
@@ -247,6 +256,9 @@ svg {
   margin: 0 .4em 1em;
   blockquote {
     margin: 0 0 1em;
+    &::first-letter {
+      margin-left: -.5em;
+    }
   }
   cite {
     font-size: .75em;
@@ -267,6 +279,12 @@ svg {
 
 // ABOUT
 // ============================================================
+
+.about-body {
+  & > p {
+    @extend .font-body;
+  }
+}
 
 .about-photo {
   width: 100%;
@@ -290,7 +308,7 @@ svg {
 .about-timeline {
   display: none;
   text-align: left;
-  margin: 0 0 4em;
+  margin: 0 0 4em 1.4em;
   .timeline-item {
     margin: 0 0 1em;
   }
@@ -317,13 +335,15 @@ svg {
   }
   .event {
     width: 67%;
+    @extend .font-body;
   }
 }
 
 ul.about-services {
+  margin: 0 0 0 1.4em;
   display: none;
   li {
-    margin: 0 0 2em;
+    margin: 0 0 1em;
     ul, li {
       list-style: circle;
     }
@@ -331,6 +351,11 @@ ul.about-services {
       margin: 0 0 0 3em;
     }
   }
+}
+
+.about-services-list {
+  margin: .6em 0 0;
+  @extend .font-body;
 }
 
 // JRIBBBLE

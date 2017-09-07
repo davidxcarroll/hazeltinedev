@@ -455,19 +455,17 @@ html {
   padding: 0;
   border: none;
   outline: none; }
-  .slick-prev:hover, .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
+  .slick-prev:hover,
+  .slick-next:hover {
     outline: none;
     background: transparent;
     color: transparent; }
-    .slick-prev:hover:before, .slick-prev:focus:before,
-    .slick-next:hover:before,
-    .slick-next:focus:before {
+    .slick-prev:hover:before,
+    .slick-next:hover:before {
       opacity: 0.5; }
-  .slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before {
-    opacity: 0.25; }
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
+    opacity: 0; }
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
@@ -531,9 +529,9 @@ html {
       color: transparent;
       padding: 5px;
       cursor: pointer; }
-      .slick-dots li button:hover, .slick-dots li button:focus {
+      .slick-dots li button:hover {
         outline: none; }
-        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+        .slick-dots li button:hover:before {
           opacity: 0.5; }
       .slick-dots li button:before {
         position: absolute;
@@ -559,6 +557,13 @@ html {
   font-style: normal;
   font-weight: normal;
   src: url("../font/symbola.eot?#iefix") format("embedded-opentype"), url("../font/symbola.woff2") format("woff2"), url("../font/symbola.woff") format("woff"), url("../font/symbola.ttf") format("truetype"), url("../font/symbola.svg#Symbola") format("svg"); }
+
+.font-body, .intro-body, .project-body, .about-body > p, .about-timeline .event, .about-services-list {
+  font-family: "Work Sans", serif;
+  font-weight: 700;
+  line-height: 1.8em;
+  font-style: initial;
+  text-align: left; }
 
 @keyframes colorBodyPrimary {
   0% {
@@ -682,6 +687,15 @@ body {
     body {
       font-size: 80%; } }
 
+.headline {
+  margin: -.5em 0 1em -.8em;
+  font-family: "Space Mono", monospace;
+  font-size: 3em;
+  transform: rotate(-12deg); }
+
+.projects .headline {
+  margin-bottom: -1em; }
+
 .wrap, .footer {
   width: 90%;
   max-width: 460px;
@@ -731,7 +745,7 @@ body {
   margin-top: 4em; }
 
 .intro-links {
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 svg {
   width: 100%;
@@ -910,12 +924,12 @@ svg {
   display: inline-block;
   margin: 0 .5em; }
 
-.project *:active,
-.project *:focus {
+*:active, *:focus {
   outline: 0; }
 
-.project .slick-list {
-  overflow: visible; }
+@media screen and (min-width: 600px) {
+  .project .slick-list {
+    overflow: visible; } }
 
 .slick-prev:before,
 .slick-next:before,
@@ -931,13 +945,14 @@ svg {
 .slick-prev,
 .slick-next {
   z-index: 100;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 100px;
   animation: colorTextSecondary 80s infinite, colorBodyPrimary 50s infinite;
-  box-shadow: inset 0 0 0 1px currentColor, 0 5px 0 0 currentColor; }
+  box-shadow: inset 0 0 0 .8px currentColor, 0 0 0 .8px currentColor, 0 5px 0 0 currentColor; }
   .slick-prev::before,
   .slick-next::before {
+    font-size: 15px;
     animation: colorTextSecondary 80s infinite; }
 
 .slick-dots li {
@@ -969,12 +984,7 @@ svg {
   text-transform: uppercase; }
 
 .project-body {
-  margin: 0 0 1em 0;
-  font-family: "Space Mono", monospace;
-  font-style: initial;
-  font-size: .9em;
-  line-height: 1.6em;
-  text-align: left; }
+  margin: 0 0 1em 0; }
 
 .more-work {
   display: none; }
@@ -983,6 +993,8 @@ svg {
   margin: 0 .4em 1em; }
   .testimonial-item blockquote {
     margin: 0 0 1em; }
+    .testimonial-item blockquote::first-letter {
+      margin-left: -.5em; }
   .testimonial-item cite {
     font-size: .75em;
     text-transform: uppercase; }
@@ -1010,7 +1022,7 @@ svg {
 .about-timeline {
   display: none;
   text-align: left;
-  margin: 0 0 4em; }
+  margin: 0 0 4em 1.4em; }
   .about-timeline .timeline-item {
     margin: 0 0 1em; }
   .about-timeline div {
@@ -1033,13 +1045,17 @@ svg {
     width: 67%; }
 
 ul.about-services {
+  margin: 0 0 0 1.4em;
   display: none; }
   ul.about-services li {
-    margin: 0 0 2em; }
+    margin: 0 0 1em; }
     ul.about-services li ul, ul.about-services li li {
       list-style: circle; }
     ul.about-services li ul li {
       margin: 0 0 0 3em; }
+
+.about-services-list {
+  margin: .6em 0 0; }
 
 .shots .shot {
   width: 46%;
