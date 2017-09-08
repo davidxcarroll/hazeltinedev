@@ -568,101 +568,101 @@ html {
 
 @keyframes colorBodyPrimary {
   0% {
-    background-color: mistyrose; }
-  20% {
     background-color: aliceblue; }
-  40% {
-    background-color: ivory; }
-  60% {
+  20% {
     background-color: honeydew; }
+  40% {
+    background-color: mistyrose; }
+  60% {
+    background-color: ivory; }
   80% {
     background-color: ghostwhite; }
   100% {
-    background-color: mistyrose; } }
+    background-color: aliceblue; } }
 
 @keyframes colorBodySecondary {
   0% {
-    background-color: midnightblue; }
-  20% {
-    background-color: darkgreen; }
-  40% {
     background-color: darkred; }
+  20% {
+    background-color: midnightblue; }
+  40% {
+    background-color: darkgreen; }
   60% {
     background-color: indigo; }
   80% {
     background-color: teal; }
   100% {
-    background-color: midnightblue; } }
+    background-color: darkred; } }
 
 @keyframes colorSvgPrimary {
   0% {
-    fill: mistyrose; }
-  20% {
     fill: aliceblue; }
-  40% {
-    fill: ivory; }
-  60% {
+  20% {
     fill: honeydew; }
+  40% {
+    fill: mistyrose; }
+  60% {
+    fill: ivory; }
   80% {
     fill: ghostwhite; }
   100% {
-    fill: mistyrose; } }
+    fill: aliceblue; } }
 
 @keyframes colorSvgSecondary {
   0% {
-    fill: midnightblue; }
-  20% {
-    fill: darkgreen; }
-  40% {
     fill: darkred; }
+  20% {
+    fill: midnightblue; }
+  40% {
+    fill: darkgreen; }
   60% {
     fill: indigo; }
   80% {
     fill: teal; }
   100% {
-    fill: midnightblue; } }
+    fill: darkred; } }
 
 @keyframes colorTextPrimary {
   0% {
-    color: mistyrose; }
-  20% {
     color: aliceblue; }
-  40% {
-    color: ivory; }
-  60% {
+  20% {
     color: honeydew; }
+  40% {
+    color: mistyrose; }
+  60% {
+    color: ivory; }
   80% {
     color: ghostwhite; }
   100% {
-    color: mistyrose; } }
+    color: aliceblue; } }
 
 @keyframes colorTextSecondary {
   0% {
-    color: midnightblue; }
-  20% {
-    color: darkgreen; }
-  40% {
     color: darkred; }
+  20% {
+    color: midnightblue; }
+  40% {
+    color: darkgreen; }
   60% {
     color: indigo; }
   80% {
     color: teal; }
   100% {
-    color: midnightblue; } }
+    color: darkred; } }
 
 @keyframes colorBorderSecondary {
   0% {
-    border-color: midnightblue; }
-  20% {
-    border-color: darkgreen; }
-  40% {
     border-color: darkred; }
+  20% {
+    border-color: midnightblue; }
+  40% {
+    border-color: darkgreen; }
   60% {
     border-color: indigo; }
   80% {
     border-color: teal; }
   100% {
-    border-color: midnightblue; } }
+    border-color: darkred; } }
 
 * {
   transition: font-size .2s ease-in-out, margin .2s ease-in-out; }

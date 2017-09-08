@@ -33,21 +33,21 @@ $border-radius:    5px;
 // MIXINS
 
 @mixin sequencePrimary($attribute) {
-  0%   {#{$attribute}: mistyrose;}
-  20%  {#{$attribute}: aliceblue;}
-  40%  {#{$attribute}: ivory;}
-  60%  {#{$attribute}: honeydew;}
+  0%   {#{$attribute}: aliceblue;}
+  20%  {#{$attribute}: honeydew;}
+  40%  {#{$attribute}: mistyrose;}
+  60%  {#{$attribute}: ivory;}
   80%  {#{$attribute}: ghostwhite;}
-  100% {#{$attribute}: mistyrose;}
+  100% {#{$attribute}: aliceblue;}
 }
 
 @mixin sequenceSecondary($attribute) {
-  0%   {#{$attribute}: midnightblue;}
-  20%  {#{$attribute}: darkgreen;}
-  40%  {#{$attribute}: darkred;}
+  0%   {#{$attribute}: darkred;}
+  20%  {#{$attribute}: midnightblue;}
+  40%  {#{$attribute}: darkgreen;}
   60%  {#{$attribute}: indigo;}
   80%  {#{$attribute}: teal;}
-  100% {#{$attribute}: midnightblue;}
+  100% {#{$attribute}: darkred;}
 }
 
 // ANIMATION
