@@ -52,24 +52,24 @@
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -50px; }
+  left: -30px; }
   [dir="rtl"] .slick-prev {
     left: auto;
-    right: -25px; }
+    right: -30px; }
   .slick-prev:before {
-    content: "⇦"; }
+    content: "◀"; }
     [dir="rtl"] .slick-prev:before {
-      content: "⇨"; }
+      content: "▶"; }
 
 .slick-next {
-  right: -50px; }
+  right: -30px; }
   [dir="rtl"] .slick-next {
-    left: -25px;
+    left: -30px;
     right: auto; }
   .slick-next:before {
-    content: "⇨"; }
+    content: "▶"; }
     [dir="rtl"] .slick-next:before {
-      content: "⇦"; }
+      content: "◀"; }
 
 /* Dots */
 .slick-dotted.slick-slider {

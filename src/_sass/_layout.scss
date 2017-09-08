@@ -31,13 +31,22 @@ body {
 }
 
 .headline {
-  margin: -.5em 0 1em -.8em;
   font-family: $font-headline;
-  font-size: 3em;
   transform: rotate(-12deg);
+  @include media(min-width $landscape) {
+    margin: -.5em 0 1em -.8em;
+    font-size: 3em;
+  }
+  @include media(max-width $landscape) {
+    margin: 0 0 1.5em -.2em;
+    font-size: 2.5em;
+  }
 }
 .projects .headline {
   margin-bottom: -1em;
+}
+.about .headline {
+  margin-top: -.5em;
 }
 
 // LAYOUT
@@ -120,6 +129,7 @@ svg {
 .emoji {
   font-family: $font-emoji;
   font-style: initial;
+  font-size: 1rem;
 }
 
 @each $emoji, $code in (availability,     "\1F4E2"),
@@ -127,6 +137,7 @@ svg {
                        (email,            "\1F4E9"),
                        (schedule,         "\1F4C6"),
                        (info,             "\2139"),
+                       (aboutme,          "\1F468"),
                        (family,           "\1F495"),
                        (world,            "\1F30E"),
                        (laptop,           "\1F468\200D\1F4BB"),
@@ -138,6 +149,8 @@ svg {
                        (etc,              "\1F4AF"),
                        (arrow-up,         "\21E7"),
                        (arrow-down,       "\21E9"),
+                       (arrow-down-curve, "\2935"),
+                       (arrow-external,   "\29C9"),
                        (arrow-down-two,   "\23EC"),
                        (arrow-left,       "\2B05"),
                        (arrow-right,      "\27A1"),
@@ -171,11 +184,11 @@ svg {
   outline: 0;
 }
 
-@include media(min-width $landscape) {
-  .project .slick-list {
-    overflow: visible;
-  }
-}
+// @include media(min-width $landscape) {
+//   .project .slick-list {
+//     overflow: visible;
+//   }
+// }
 
 .slick-prev:before,
 .slick-next:before,
@@ -190,15 +203,15 @@ svg {
 }
 .slick-prev,
 .slick-next {
-  z-index: 100;
-  width: 30px;
-  height: 30px;
-  border-radius: 100px;
-  animation: colorTextSecondary 80s infinite, colorBodyPrimary 50s infinite;
+  // z-index: 100;
+  // width: 30px;
+  // height: 30px;
+  // border-radius: 100px;
+  // animation: colorTextSecondary 80s infinite, colorBodyPrimary 50s infinite;
   // animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
-  box-shadow: inset 0 0 0 .8px currentColor, 0 0 0 .8px currentColor, 0 5px 0 0 currentColor;
+  // box-shadow: inset 0 0 0 .8px currentColor, 0 0 0 .8px currentColor, 0 5px 0 0 currentColor;
   &::before {
-    font-size: 15px;
+    font-size: 20px;
     animation: colorTextSecondary 80s infinite;
     // animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
   }
@@ -269,7 +282,7 @@ svg {
 .testimonials {
   .slick-next,
   .slick-prev {
-    top: 21px;
+    top: 30px;
   }
 }
 

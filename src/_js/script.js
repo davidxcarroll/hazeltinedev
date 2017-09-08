@@ -6,7 +6,7 @@ $('.project').slick({
   centerMode: true,
   centerPadding: '0',
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 200,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -30,7 +30,7 @@ $('.project').slick({
 
 $('.testimonials-list').slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 200,
   slidesToShow: 1,
   slidesToScroll: 1,

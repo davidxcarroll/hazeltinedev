@@ -13,8 +13,8 @@ $slick-loader-path: "./" !default;
 $slick-arrow-color: black !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\21E6" !default;
-$slick-next-character: "\21E8" !default;
+$slick-prev-character: "\25C0" !default;
+$slick-next-character: "\25B6" !default;
 $slick-dot-character: "•" !default;
 $slick-dot-size: 30px !default;
 $slick-opacity-default: 1 !default;
@@ -101,10 +101,10 @@ $slick-opacity-not-active: .25 !default;
 }
 
 .slick-prev {
-    left: -50px;
+    left: -30px;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: -30px;
     }
     &:before {
         content: $slick-prev-character;
@@ -115,9 +115,9 @@ $slick-opacity-not-active: .25 !default;
 }
 
 .slick-next {
-    right: -50px;
+    right: -30px;
     [dir="rtl"] & {
-        left: -25px;
+        left: -30px;
         right: auto;
     }
     &:before {

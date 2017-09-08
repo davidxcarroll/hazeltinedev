@@ -19,53 +19,16 @@ $font-emoji:       'Symbola', sans-serif;
 
 $border-radius:    5px;
 
-//- EXTENDS
+// EXTENDS
 
 .font-body {
   font-family: $font-body;
-  // font-size: .9rem;
+  font-size: .9rem;
   font-weight: 700;
   line-height: 1.8em;
   font-style: initial;
   text-align: left;
 }
-
-// GRADIENT
-
-// @mixin gradientShift {
-  
-//   @mixin colorVariable {
-//     $colorVariable: mistyrose;
-//     @keyframes colorShift {
-//       0%   {$colorVariable: mistyrose;}
-//       20%  {$colorVariable: aliceblue;}
-//       40%  {$colorVariable: ivory;}
-//       60%  {$colorVariable: honeydew;}
-//       80%  {$colorVariable: ghostwhite;}
-//       100% {$colorVariable: mistyrose;}
-//     }
-//     animation-name: colorShift;
-//     animation-duration: 5s;
-//     animation-iteration-count: infinite;
-//   }
-
-//   background: linear-gradient(45deg, @include colorVariable 0%, @include colorVariable 50%, @include colorVariable 100%);
-  
-// }
-
-// body {
-//   @include gradientShift;
-// }
-
-// EXTENDS
-
-// .hide {
-//   display: none;
-// }
-
-// .show {
-//   display: initial;
-// }
 
 // MIXINS
 
@@ -88,10 +51,6 @@ $border-radius:    5px;
 }
 
 // ANIMATION
-
-// @keyframes colorBodyPrimaryGradient {
-//   @include sequencePrimaryGradient(background);
-// }
 
 @keyframes colorBodyPrimary {
   @include sequencePrimary(background-color);
