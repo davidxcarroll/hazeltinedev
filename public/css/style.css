@@ -664,29 +664,34 @@ html {
   100% {
     border-color: darkred; } }
 
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-style: italic;
+  text-align: justify;
+  font-weight: 400; }
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 80%; } }
+
+.intro-body h3 {
+  font-size: 1.2em;
+  line-height: 1.6em; }
+
 * {
   transition: font-size .2s ease-in-out, margin .2s ease-in-out; }
 
 body {
   margin: 1em 0;
-  font-weight: 700;
-  font-style: italic;
-  text-align: justify;
-  animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite;
-  overflow-x: hidden; }
+  animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite; }
 
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-body {
-  font-size: 16px;
-  font-family: "Space Mono", monospace;
-  font-weight: 400; }
-  @media screen and (max-width: 600px) {
-    body {
-      font-size: 80%; } }
+.external {
+  cursor: alias; }
 
 .headline {
   font-family: "Space Mono", monospace;
@@ -857,11 +862,6 @@ svg {
   margin: 0 .5em;
   content: "⤵"; }
 
-.emoji-arrow-external:before {
-  display: inline-block;
-  margin: 0 .5em;
-  content: "⧉"; }
-
 .emoji-arrow-down-two:before {
   display: inline-block;
   margin: 0 .5em;
@@ -876,6 +876,16 @@ svg {
   display: inline-block;
   margin: 0 .5em;
   content: "➡"; }
+
+.emoji-plus:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "➕"; }
+
+.emoji-minus:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "➖"; }
 
 .emoji-marriage:before {
   display: inline-block;
@@ -964,23 +974,23 @@ svg {
 .slick-next:before {
   opacity: 1; }
 
-.slick-prev::before,
-.slick-next::before {
-  font-size: 20px;
-  animation: colorTextSecondary 80s infinite; }
+.slick-prev,
+.slick-next {
+  top: 48px; }
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: 20px;
+    animation: colorTextSecondary 80s infinite; }
 
 .slick-dots li {
   margin: 0; }
 
-.project {
-  height: 27em; }
-
 .project-item {
-  height: 100%;
   position: relative;
   padding: 1em 2em .6em; }
 
 .project-item-cover {
+  height: 27em;
   animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
   box-shadow: none; }
   .project-item-cover .svg {
@@ -1012,10 +1022,6 @@ svg {
   .testimonial-item cite {
     font-size: .75em;
     text-transform: uppercase; }
-
-.testimonials .slick-next,
-.testimonials .slick-prev {
-  top: 30px; }
 
 .about-photo {
   width: 100%;

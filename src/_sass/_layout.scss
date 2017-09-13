@@ -6,11 +6,8 @@
 
 body {
   margin: 1em 0;
-  font-weight: 700;
-  font-style: italic;
-  text-align: justify;
   animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 ul, li {
@@ -19,15 +16,8 @@ ul, li {
   list-style: none;
 }
 
-// TYPE
-
-body {
-  font-size: $base-font-size;
-  font-family: $font-primary;
-  font-weight: 400;
-  @include media(max-width $landscape) {
-    font-size: 80%;
-  }
+.external {
+  cursor: alias;
 }
 
 .headline {
@@ -42,6 +32,7 @@ body {
     font-size: 2.5em;
   }
 }
+
 .projects .headline {
   margin-bottom: -1em;
 }
@@ -150,10 +141,11 @@ svg {
                        (arrow-up,         "\21E7"),
                        (arrow-down,       "\21E9"),
                        (arrow-down-curve, "\2935"),
-                       (arrow-external,   "\29C9"),
                        (arrow-down-two,   "\23EC"),
                        (arrow-left,       "\2B05"),
                        (arrow-right,      "\27A1"),
+                       (plus,             "\2795"),
+                       (minus,            "\2796"),
                        (marriage,         "\1F48D"),
                        (school,           "\1F393"),
                        (bike,             "\1F6B2"),
@@ -203,6 +195,7 @@ svg {
 }
 .slick-prev,
 .slick-next {
+  top: 48px;
   // z-index: 100;
   // width: 30px;
   // height: 30px;
@@ -224,17 +217,18 @@ svg {
 // PROJECT SELECTORS
 
 .project {
-  height: 27em;
+  // height: 27em;
 }
 
 .project-item {
-  height: 100%;
+  // height: 100%;
   position: relative;
   padding: 1em 2em .6em;
   // box-shadow: inset 0 0 0 2px currentColor;
   // border-radius: $border-radius;
 }
 .project-item-cover {
+  height: 27em;
   animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
   box-shadow: none;
   .svg {
@@ -278,17 +272,6 @@ svg {
     text-transform: uppercase;
   }
 }
-
-.testimonials {
-  .slick-next,
-  .slick-prev {
-    top: 30px;
-  }
-}
-
-// .testimonials .slick-list {
-//   overflow: visible;
-// }
 
 // ABOUT
 // ============================================================

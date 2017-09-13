@@ -6,7 +6,7 @@
 mixin testimonial(quote,person,link,company)
 	div.testimonial-item
 		blockquote &ldquo;#{quote}&rdquo;
-		cite #[span.emoji.emoji-testimonial]#{person}, #[a(href=link) #{company}#[span.emoji.emoji-arrow-external]]
+		cite #[span.emoji.emoji-testimonial]#{person}, #[a(href=link class="external" target="_blank") #{company}]
 
 mixin timelineItem(year, event)
 		li.timeline-item

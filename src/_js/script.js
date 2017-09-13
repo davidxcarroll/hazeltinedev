@@ -10,15 +10,11 @@ $('.project').slick({
   speed: 200,
   slidesToShow: 1,
   slidesToScroll: 1,
+  adaptiveHeight: true,
   responsive: [
     {
       breakpoint: 600,
       settings: {
-        dots: true,
-        infinite: true,
-        speed: 200,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         arrows: false
       }
     }
@@ -39,11 +35,6 @@ $('.testimonials-list').slick({
     {
       breakpoint: 600,
       settings: {
-        dots: true,
-        infinite: true,
-        speed: 200,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         arrows: false
       }
     }
@@ -63,19 +54,19 @@ $('.testimonials-list').slick({
 
 $('#about-timeline-button').click(function(){
   $('.about-timeline').slideToggle(300);
-  if($('#about-timeline-button .emoji').hasClass('emoji-arrow-down')){
-   $('#about-timeline-button .emoji').removeClass('emoji-arrow-down').addClass('emoji-arrow-up');
-  } else if($('#about-timeline-button .emoji').hasClass('emoji-arrow-up')){
-   $('#about-timeline-button .emoji').removeClass('emoji-arrow-up').addClass('emoji-arrow-down');
+  if($('#about-timeline-button .emoji').hasClass('emoji-plus')){
+   $('#about-timeline-button .emoji').removeClass('emoji-plus').addClass('emoji-minus');
+  } else if($('#about-timeline-button .emoji').hasClass('emoji-minus')){
+   $('#about-timeline-button .emoji').removeClass('emoji-minus').addClass('emoji-plus');
   }
 });
 
 $('#about-services-button').click(function(){
   $('.about-services').slideToggle(300);
-  if($('#about-services-button .emoji').hasClass('emoji-arrow-down')){
-   $('#about-services-button .emoji').removeClass('emoji-arrow-down').addClass('emoji-arrow-up');
-  } else if($('#about-services-button .emoji').hasClass('emoji-arrow-up')){
-   $('#about-services-button .emoji').removeClass('emoji-arrow-up').addClass('emoji-arrow-down');
+  if($('#about-services-button .emoji').hasClass('emoji-plus')){
+   $('#about-services-button .emoji').removeClass('emoji-plus').addClass('emoji-minus');
+  } else if($('#about-services-button .emoji').hasClass('emoji-minus')){
+   $('#about-services-button .emoji').removeClass('emoji-minus').addClass('emoji-plus');
   }
 });
 
