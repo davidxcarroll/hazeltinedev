@@ -57,9 +57,9 @@
     left: auto;
     right: -30px; }
   .slick-prev:before {
-    content: "◀"; }
+    content: "⇤"; }
     [dir="rtl"] .slick-prev:before {
-      content: "▶"; }
+      content: "⇥"; }
 
 .slick-next {
   right: -30px; }
@@ -67,9 +67,9 @@
     left: -30px;
     right: auto; }
   .slick-next:before {
-    content: "▶"; }
+    content: "⇥"; }
     [dir="rtl"] .slick-next:before {
-      content: "◀"; }
+      content: "⇤"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -89,7 +89,6 @@
     display: inline-block;
     height: 20px;
     width: 20px;
-    margin: 0 5px;
     padding: 0;
     cursor: pointer; }
     .slick-dots li button {
@@ -116,7 +115,7 @@
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 30px;
+        font-size: 10px;
         line-height: 20px;
         text-align: center;
         color: black;

@@ -1,13 +1,13 @@
 // NATIVE
 
-* {
-  transition: font-size .2s ease-in-out, margin .2s ease-in-out;
-}
+// * {
+//   transition: font-size .2s ease-in-out, margin .2s ease-in-out;
+// }
 
 body {
   margin: 1em 0;
   animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 ul, li {
@@ -102,9 +102,31 @@ ul, li {
 }
 
 .intro {
+  position: relative;
   margin-top: 4em;
 }
+.intro-photo {
+  position: absolute;
+  @include media(min-width $landscape) {
+    width: 11.5em;
+    height: 11.5em;
+    top: -7em;
+    right: -2em;
+  }
+  @include media(max-width $landscape) {
+    width: 9em;
+    height: 9em;
+    top: -6em;
+    right: 0;
+  }
+  .about-photo, .about-color-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10em;
+  }
+}
 .intro-body {
+  width: 65%;
   @extend .font-body;
 }
 .intro-links {
@@ -123,38 +145,38 @@ svg {
   font-size: 1rem;
 }
 
-@each $emoji, $code in (availability,     "\1F4E2"),
-                       (availability-no,  "\2716"),
-                       (email,            "\1F4E9"),
-                       (schedule,         "\1F4C6"),
-                       (info,             "\2139"),
-                       (aboutme,          "\1F468"),
-                       (family,           "\1F495"),
-                       (world,            "\1F30E"),
-                       (laptop,           "\1F468\200D\1F4BB"),
-                       (testimonial,      "\1F4AC"),
-                       (brand,            "\1F6A9"),
-                       (design,           "\1F3A8"),
-                       (strategy,         "\1F4CA"),
-                       (dev,              "\1F523"),
-                       (etc,              "\1F4AF"),
-                       (arrow-up,         "\21E7"),
-                       (arrow-down,       "\21E9"),
-                       (arrow-down-curve, "\2935"),
-                       (arrow-down-two,   "\23EC"),
-                       (arrow-left,       "\2B05"),
-                       (arrow-right,      "\27A1"),
-                       (plus,             "\2795"),
-                       (minus,            "\2796"),
-                       (marriage,         "\1F48D"),
-                       (school,           "\1F393"),
-                       (bike,             "\1F6B2"),
-                       (sunrise,          "\1F304"),
-                       (flash,            "\2728"),
-                       (born,             "\1F423"),
-                       (move,             "\1F4CD"),
-                       (question,         "\2753"),
-                       (top,              "\1F51D") {
+@each $emoji, $code in (availability,     $availability),
+                       (availability-no,  $availability-no),
+                       (email,            $email),
+                       (schedule,         $schedule),
+                       (info,             $info),
+                       (aboutme,          $aboutme),
+                       (family,           $family),
+                       (world,            $world),
+                       (laptop,           $laptop),
+                       (testimonial,      $testimonial),
+                       (brand,            $brand),
+                       (design,           $design),
+                       (strategy,         $strategy),
+                       (dev,              $dev),
+                       (etc,              $etc),
+                       (arrow-up,         $arrow-up),
+                       (arrow-down,       $arrow-down),
+                       (arrow-down-curve, $arrow-down-curve),
+                       (arrow-down-two,   $arrow-down-two),
+                       (arrow-left,       $emoji-arrow-left),
+                       (arrow-right,      $emoji-arrow-right),
+                       (plus,             $plus),
+                       (minus,            $minus),
+                       (marriage,         $marriage),
+                       (school,           $school),
+                       (bike,             $bike),
+                       (sunrise,          $sunrise),
+                       (flash,            $flash),
+                       (born,             $born),
+                       (move,             $move),
+                       (question,         $question),
+                       (top,              $top) {
   .emoji-#{$emoji}:before {
     display: inline-block;
     margin: 0 .5em;
@@ -228,11 +250,21 @@ svg {
   // border-radius: $border-radius;
 }
 .project-item-cover {
-  height: 27em;
+  @include media(min-width $landscape) {
+    height: 27em;
+  }
+  @include media(max-width $landscape) {
+    height: 23em;
+  }
   animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
   box-shadow: none;
   .svg {
-    width: 64%;
+    @include media(min-width $landscape) {
+      width: 64%;
+    }
+    @include media(max-width $landscape) {
+      width: 12em;
+    }
     margin: 2em auto;
     svg {
       fill: currentColor;
@@ -282,11 +314,18 @@ svg {
   }
 }
 
+.about-photo-david {
+  background-image: url('../img/about-david-carroll-01.jpg');
+}
+
+.about-photo-family {
+  background-image: url('../img/about-david-carroll-family.gif');
+}
+
 .about-photo {
   width: 100%;
-  height: 25em;
+  height: 16em;
   position: relative;
-  background-image: url('../img/david-carroll-about@2x.jpg');
   background-color: currentColor;
   background-size: cover;
   background-blend-mode: screen;
@@ -294,7 +333,7 @@ svg {
 }
 .about-color-cover {
   width: 100%;
-  height: 25em;
+  height: 16em;
   position: absolute;
   animation: colorBodyPrimary 50s infinite;
   mix-blend-mode: multiply;

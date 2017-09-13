@@ -352,6 +352,110 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@font-face {
+  font-family: "Symbola";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/symbola.eot?#iefix") format("embedded-opentype"), url("../font/symbola.woff2") format("woff2"), url("../font/symbola.woff") format("woff"), url("../font/symbola.ttf") format("truetype"), url("../font/symbola.svg#Symbola") format("svg"); }
+
+@keyframes colorBodyPrimary {
+  0% {
+    background-color: aliceblue; }
+  20% {
+    background-color: honeydew; }
+  40% {
+    background-color: mistyrose; }
+  60% {
+    background-color: ivory; }
+  80% {
+    background-color: ghostwhite; }
+  100% {
+    background-color: aliceblue; } }
+
+@keyframes colorBodySecondary {
+  0% {
+    background-color: darkred; }
+  20% {
+    background-color: midnightblue; }
+  40% {
+    background-color: darkgreen; }
+  60% {
+    background-color: indigo; }
+  80% {
+    background-color: teal; }
+  100% {
+    background-color: darkred; } }
+
+@keyframes colorSvgPrimary {
+  0% {
+    fill: aliceblue; }
+  20% {
+    fill: honeydew; }
+  40% {
+    fill: mistyrose; }
+  60% {
+    fill: ivory; }
+  80% {
+    fill: ghostwhite; }
+  100% {
+    fill: aliceblue; } }
+
+@keyframes colorSvgSecondary {
+  0% {
+    fill: darkred; }
+  20% {
+    fill: midnightblue; }
+  40% {
+    fill: darkgreen; }
+  60% {
+    fill: indigo; }
+  80% {
+    fill: teal; }
+  100% {
+    fill: darkred; } }
+
+@keyframes colorTextPrimary {
+  0% {
+    color: aliceblue; }
+  20% {
+    color: honeydew; }
+  40% {
+    color: mistyrose; }
+  60% {
+    color: ivory; }
+  80% {
+    color: ghostwhite; }
+  100% {
+    color: aliceblue; } }
+
+@keyframes colorTextSecondary {
+  0% {
+    color: darkred; }
+  20% {
+    color: midnightblue; }
+  40% {
+    color: darkgreen; }
+  60% {
+    color: indigo; }
+  80% {
+    color: teal; }
+  100% {
+    color: darkred; } }
+
+@keyframes colorBorderSecondary {
+  0% {
+    border-color: darkred; }
+  20% {
+    border-color: midnightblue; }
+  40% {
+    border-color: darkgreen; }
+  60% {
+    border-color: indigo; }
+  80% {
+    border-color: teal; }
+  100% {
+    border-color: darkred; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -482,9 +586,9 @@ html {
     left: auto;
     right: -30px; }
   .slick-prev:before {
-    content: "◀"; }
+    content: "⇤"; }
     [dir="rtl"] .slick-prev:before {
-      content: "▶"; }
+      content: "⇥"; }
 
 .slick-next {
   right: -30px; }
@@ -492,9 +596,9 @@ html {
     left: -30px;
     right: auto; }
   .slick-next:before {
-    content: "▶"; }
+    content: "⇥"; }
     [dir="rtl"] .slick-next:before {
-      content: "◀"; }
+      content: "⇤"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -514,7 +618,6 @@ html {
     display: inline-block;
     height: 20px;
     width: 20px;
-    margin: 0 5px;
     padding: 0;
     cursor: pointer; }
     .slick-dots li button {
@@ -541,7 +644,7 @@ html {
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 30px;
+        font-size: 10px;
         line-height: 20px;
         text-align: center;
         color: black;
@@ -552,138 +655,33 @@ html {
       color: black;
       opacity: 1; }
 
-@font-face {
-  font-family: "Symbola";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../font/symbola.eot?#iefix") format("embedded-opentype"), url("../font/symbola.woff2") format("woff2"), url("../font/symbola.woff") format("woff"), url("../font/symbola.ttf") format("truetype"), url("../font/symbola.svg#Symbola") format("svg"); }
-
-.font-body, .intro-body, .project-body, .about-body > p, .about-timeline .event, .about-services-list {
-  font-family: "Work Sans", serif;
-  font-size: .9rem;
-  font-weight: 700;
-  line-height: 1.8em;
-  font-style: initial;
-  text-align: left; }
-
-@keyframes colorBodyPrimary {
-  0% {
-    background-color: aliceblue; }
-  20% {
-    background-color: honeydew; }
-  40% {
-    background-color: mistyrose; }
-  60% {
-    background-color: ivory; }
-  80% {
-    background-color: ghostwhite; }
-  100% {
-    background-color: aliceblue; } }
-
-@keyframes colorBodySecondary {
-  0% {
-    background-color: darkred; }
-  20% {
-    background-color: midnightblue; }
-  40% {
-    background-color: darkgreen; }
-  60% {
-    background-color: indigo; }
-  80% {
-    background-color: teal; }
-  100% {
-    background-color: darkred; } }
-
-@keyframes colorSvgPrimary {
-  0% {
-    fill: aliceblue; }
-  20% {
-    fill: honeydew; }
-  40% {
-    fill: mistyrose; }
-  60% {
-    fill: ivory; }
-  80% {
-    fill: ghostwhite; }
-  100% {
-    fill: aliceblue; } }
-
-@keyframes colorSvgSecondary {
-  0% {
-    fill: darkred; }
-  20% {
-    fill: midnightblue; }
-  40% {
-    fill: darkgreen; }
-  60% {
-    fill: indigo; }
-  80% {
-    fill: teal; }
-  100% {
-    fill: darkred; } }
-
-@keyframes colorTextPrimary {
-  0% {
-    color: aliceblue; }
-  20% {
-    color: honeydew; }
-  40% {
-    color: mistyrose; }
-  60% {
-    color: ivory; }
-  80% {
-    color: ghostwhite; }
-  100% {
-    color: aliceblue; } }
-
-@keyframes colorTextSecondary {
-  0% {
-    color: darkred; }
-  20% {
-    color: midnightblue; }
-  40% {
-    color: darkgreen; }
-  60% {
-    color: indigo; }
-  80% {
-    color: teal; }
-  100% {
-    color: darkred; } }
-
-@keyframes colorBorderSecondary {
-  0% {
-    border-color: darkred; }
-  20% {
-    border-color: midnightblue; }
-  40% {
-    border-color: darkgreen; }
-  60% {
-    border-color: indigo; }
-  80% {
-    border-color: teal; }
-  100% {
-    border-color: darkred; } }
-
 body {
   font-family: "Space Mono", monospace;
   font-size: 16px;
   font-style: italic;
-  text-align: justify;
-  font-weight: 400; }
+  text-align: justify; }
   @media screen and (max-width: 600px) {
     body {
       font-size: 80%; } }
 
+.font-body, .intro-body, .project-body, .about-body > p, .about-timeline .event, .about-services-list {
+  font-family: "Work Sans", serif;
+  font-size: .9rem;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.8em;
+  font-style: initial;
+  text-align: left; }
+
 .intro-body h3 {
+  margin: 0 0 1em;
   font-size: 1.2em;
   line-height: 1.6em; }
 
-* {
-  transition: font-size .2s ease-in-out, margin .2s ease-in-out; }
-
 body {
   margin: 1em 0;
-  animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite; }
+  animation: colorBodyPrimary 50s infinite, colorTextSecondary 80s infinite;
+  overflow-x: hidden; }
 
 ul, li {
   margin: 0;
@@ -757,7 +755,30 @@ ul, li {
         width: 50%; } }
 
 .intro {
+  position: relative;
   margin-top: 4em; }
+
+.intro-photo {
+  position: absolute; }
+  @media screen and (min-width: 600px) {
+    .intro-photo {
+      width: 11.5em;
+      height: 11.5em;
+      top: -7em;
+      right: -2em; } }
+  @media screen and (max-width: 600px) {
+    .intro-photo {
+      width: 9em;
+      height: 9em;
+      top: -6em;
+      right: 0; } }
+  .intro-photo .about-photo, .intro-photo .about-color-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10em; }
+
+.intro-body {
+  width: 65%; }
 
 .intro-links {
   margin-top: 1em; }
@@ -800,7 +821,7 @@ svg {
 .emoji-aboutme:before {
   display: inline-block;
   margin: 0 .5em;
-  content: "👨"; }
+  content: "𯑨"; }
 
 .emoji-family:before {
   display: inline-block;
@@ -860,7 +881,7 @@ svg {
 .emoji-arrow-down-curve:before {
   display: inline-block;
   margin: 0 .5em;
-  content: "⤵"; }
+  content: "↯"; }
 
 .emoji-arrow-down-two:before {
   display: inline-block;
@@ -870,12 +891,12 @@ svg {
 .emoji-arrow-left:before {
   display: inline-block;
   margin: 0 .5em;
-  content: "⬅"; }
+  content: "⇤"; }
 
 .emoji-arrow-right:before {
   display: inline-block;
   margin: 0 .5em;
-  content: "➡"; }
+  content: "⇥"; }
 
 .emoji-plus:before {
   display: inline-block;
@@ -990,12 +1011,22 @@ svg {
   padding: 1em 2em .6em; }
 
 .project-item-cover {
-  height: 27em;
   animation: colorTextPrimary 50s infinite, colorBodySecondary 80s infinite;
   box-shadow: none; }
+  @media screen and (min-width: 600px) {
+    .project-item-cover {
+      height: 27em; } }
+  @media screen and (max-width: 600px) {
+    .project-item-cover {
+      height: 23em; } }
   .project-item-cover .svg {
-    width: 64%;
     margin: 2em auto; }
+    @media screen and (min-width: 600px) {
+      .project-item-cover .svg {
+        width: 64%; } }
+    @media screen and (max-width: 600px) {
+      .project-item-cover .svg {
+        width: 12em; } }
     .project-item-cover .svg svg {
       fill: currentColor; }
 
@@ -1023,18 +1054,23 @@ svg {
     font-size: .75em;
     text-transform: uppercase; }
 
+.about-photo-david {
+  background-image: url("../img/about-david-carroll-01.jpg"); }
+
+.about-photo-family {
+  background-image: url("../img/about-david-carroll-family.gif"); }
+
 .about-photo {
   width: 100%;
-  height: 25em;
+  height: 16em;
   position: relative;
-  background-image: url("../img/david-carroll-about@2x.jpg");
   background-color: currentColor;
   background-size: cover;
   background-blend-mode: screen; }
 
 .about-color-cover {
   width: 100%;
-  height: 25em;
+  height: 16em;
   position: absolute;
   animation: colorBodyPrimary 50s infinite;
   mix-blend-mode: multiply; }

@@ -9,12 +9,14 @@
 @import "neat/neat";
 // @import "base/base";
 
-@import "slick/slick";
-@import "slick/slick-theme";
-
 // DYNAMIC
 
 @import "_variables";
+
+// FUNCTIONALITY
+
+@import "slick/_slick";
+@import "slick/_slick-theme";
 
 // GENERAL
 

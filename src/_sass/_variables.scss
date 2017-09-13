@@ -19,16 +19,40 @@ $font-emoji:       'Symbola', sans-serif;
 
 $border-radius:    5px;
 
-// EXTENDS
+$emoji-arrow-left:     "\21E4";
+$emoji-arrow-right:    "\21E5";
+$availability:         "\1F4E2";
+$availability-no:      "\2716";
+$email:                "\1F4E9";
+$schedule:             "\1F4C6";
+$info:                 "\2139";
+$aboutme:              "\2F468";
+$family:               "\1F495";
+$world:                "\1F30E";
+$laptop:               "\1F468\200D\1F4BB";
+$testimonial:          "\1F4AC";
+$brand:                "\1F6A9";
+$design:               "\1F3A8";
+$strategy:             "\1F4CA";
+$dev:                  "\1F523";
+$etc:                  "\1F4AF";
+$arrow-up:             "\21E7";
+$arrow-down:           "\21E9";
+$arrow-down-curve:     "\021AF";
+$arrow-down-two:       "\23EC";
+$plus:                 "\2795";
+$minus:                "\2796";
+$marriage:             "\1F48D";
+$school:               "\1F393";
+$bike:                 "\1F6B2";
+$sunrise:              "\1F304";
+$flash:                "\2728";
+$born:                 "\1F423";
+$move:                 "\1F4CD";
+$question:             "\2753";
+$top:                  "\1F51D";
 
-.font-body {
-  font-family: $font-body;
-  font-size: .9rem;
-  font-weight: 700;
-  line-height: 1.8em;
-  font-style: initial;
-  text-align: left;
-}
+
 
 // MIXINS
 
