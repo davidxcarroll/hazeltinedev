@@ -41,14 +41,6 @@ $('.testimonials-list').slick({
   ]
 });
 
-// $('.slick-slider').on('click', '.slick-slide', function (e) {
-//   e.stopPropagation();
-//   var index = $(this).data("slick-index");
-//   if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
-//     $('.slick-slider').slick('slickGoTo', index);
-//   }
-// });
-
 // ABOUT ACCORDIONS
 // ==================================================
 

@@ -1,13 +1,21 @@
-extends _base.pug
+html
 
-block content
+	include _includes/head.pug
 
-	include _includes/intro.pug
+	body
 
-	include _includes/projects.pug
+	include _includes/variables.pug
+	
+	.wrap
 
-	include _includes/testimonials.pug
+		include _includes/intro.pug
 
-	include _includes/about.pug
+		include _includes/projects.pug
 
-	include _includes/dribbble.pug
+		include _includes/testimonials.pug
+
+		include _includes/about.pug
+
+		include _includes/dribbble.pug
+
+	include _includes/footer.pug

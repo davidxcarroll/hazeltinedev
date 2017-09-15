@@ -37,7 +37,7 @@ ul, li {
   margin-bottom: -1em;
 }
 .about .headline {
-  margin-top: -.5em;
+  margin-top: -.2em;
 }
 
 // LAYOUT
@@ -251,7 +251,7 @@ svg {
 }
 .project-item-cover {
   @include media(min-width $landscape) {
-    height: 27em;
+    height: 28.75em;
   }
   @include media(max-width $landscape) {
     height: 23em;
@@ -260,7 +260,7 @@ svg {
   box-shadow: none;
   .svg {
     @include media(min-width $landscape) {
-      width: 64%;
+      width: 70%;
     }
     @include media(max-width $landscape) {
       width: 12em;
@@ -282,6 +282,11 @@ svg {
 .project-body {
   margin: 0 0 1em 0;
   @extend .font-body;
+  img {
+    width: 100%;
+    box-shadow: -.5em .5em 0 0 currentColor;
+    // box-shadow: -.5em .5em 1em 0 currentColor;
+  }
 }
 
 .more-work {
@@ -403,7 +408,7 @@ ul.about-services {
     display: inline-block;
     // border-radius: $border-radius;
     overflow: hidden;
-    box-shadow: -.3em .3em 0 0 currentColor;
+    box-shadow: -.5em .5em 0 0 currentColor;
     img {
       width: 100%;
     }
