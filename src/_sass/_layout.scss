@@ -164,8 +164,8 @@ svg {
                        (arrow-down,       $arrow-down),
                        (arrow-down-curve, $arrow-down-curve),
                        (arrow-down-two,   $arrow-down-two),
-                       (arrow-left,       $emoji-arrow-left),
-                       (arrow-right,      $emoji-arrow-right),
+                       (arrow-left,       $arrow-left),
+                       (arrow-right,      $arrow-right),
                        (plus,             $plus),
                        (minus,            $minus),
                        (marriage,         $marriage),
@@ -176,6 +176,8 @@ svg {
                        (born,             $born),
                        (move,             $move),
                        (question,         $question),
+                       (hippo-rod,        $hippo-rod),
+                       (hygge-bolt,       $hygge-bolt),
                        (top,              $top) {
   .emoji-#{$emoji}:before {
     display: inline-block;

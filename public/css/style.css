@@ -586,9 +586,9 @@ html {
     left: auto;
     right: -30px; }
   .slick-prev:before {
-    content: "⇤"; }
+    content: "⇦"; }
     [dir="rtl"] .slick-prev:before {
-      content: "⇥"; }
+      content: "⇨"; }
 
 .slick-next {
   right: -30px; }
@@ -596,9 +596,9 @@ html {
     left: -30px;
     right: auto; }
   .slick-next:before {
-    content: "⇥"; }
+    content: "⇨"; }
     [dir="rtl"] .slick-next:before {
-      content: "⇤"; }
+      content: "⇦"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -616,8 +616,8 @@ html {
   .slick-dots li {
     position: relative;
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     padding: 0;
     cursor: pointer; }
     .slick-dots li button {
@@ -893,12 +893,12 @@ svg {
 .emoji-arrow-left:before {
   display: inline-block;
   margin: 0 .5em;
-  content: "⇤"; }
+  content: "⇦"; }
 
 .emoji-arrow-right:before {
   display: inline-block;
   margin: 0 .5em;
-  content: "⇥"; }
+  content: "⇨"; }
 
 .emoji-plus:before {
   display: inline-block;
@@ -949,6 +949,16 @@ svg {
   display: inline-block;
   margin: 0 .5em;
   content: "❓"; }
+
+.emoji-hippo-rod:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "⚕"; }
+
+.emoji-hygge-bolt:before {
+  display: inline-block;
+  margin: 0 .5em;
+  content: "⚡"; }
 
 .emoji-top:before {
   display: inline-block;
