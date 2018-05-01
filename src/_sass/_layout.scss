@@ -44,7 +44,8 @@ ul, li {
 
 .wrap {
   width: 90%;
-  max-width: 460px;
+  // max-width: 460px;
+  max-width: 600px;
   margin: 0 auto;
   color: currentColor;
   a {
@@ -60,7 +61,7 @@ ul, li {
 // ============================================================
 
 .availability {
-  margin: 0 0 2em;
+  margin: 0;
 }
 
 // GLOBAL
@@ -80,7 +81,7 @@ ul, li {
     transform: rotate(-12deg);
     left: 22%;
     @include media(min-width $landscape) {
-      top: 9.5em;
+      top: 11.5em;
     }
     @include media(max-width $landscape) {
       top: 70%;
@@ -90,7 +91,7 @@ ul, li {
     transform: rotate(-12deg);
     right: 0;
     @include media(min-width $landscape) {
-      top: 6em;
+      top: 6.5em;
     }
     @include media(max-width $landscape) {
       top: 45%;
@@ -103,14 +104,14 @@ ul, li {
 
 .intro {
   position: relative;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .intro-photo {
   position: absolute;
   @include media(min-width $landscape) {
-    width: 11.5em;
-    height: 11.5em;
-    top: -7em;
+    width: 13em;
+    height: 13em;
+    top: -2em;
     right: -2em;
   }
   @include media(max-width $landscape) {
@@ -253,7 +254,7 @@ svg {
 }
 .project-item-cover {
   @include media(min-width $landscape) {
-    height: 28.75em;
+    height: 35em;
   }
   @include media(max-width $landscape) {
     height: 23em;
