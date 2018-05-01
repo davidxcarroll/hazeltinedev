@@ -254,7 +254,7 @@ svg {
 }
 .project-item-cover {
   @include media(min-width $landscape) {
-    height: 35em;
+    height: 36em;
   }
   @include media(max-width $landscape) {
     height: 23em;

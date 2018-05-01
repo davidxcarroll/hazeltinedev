@@ -1027,7 +1027,7 @@ svg {
   box-shadow: none; }
   @media screen and (min-width: 600px) {
     .project-item-cover {
-      height: 35em; } }
+      height: 36em; } }
   @media screen and (max-width: 600px) {
     .project-item-cover {
       height: 23em; } }
