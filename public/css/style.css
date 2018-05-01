@@ -1030,7 +1030,7 @@ svg {
       height: 36em; } }
   @media screen and (max-width: 600px) {
     .project-item-cover {
-      height: 23em; } }
+      height: 27em; } }
   .project-item-cover .svg {
     margin: 2em auto; }
     @media screen and (min-width: 600px) {
@@ -1038,7 +1038,7 @@ svg {
         width: 70%; } }
     @media screen and (max-width: 600px) {
       .project-item-cover .svg {
-        width: 12em; } }
+        width: 16em; } }
     .project-item-cover .svg svg {
       fill: currentColor; }
 
